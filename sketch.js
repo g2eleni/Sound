@@ -5,7 +5,8 @@ function setup() {
 function draw() {
   
 }// The midi notes of a scale
-var notes = [ 60, 61, 63, 64, 65, 66];
+//var notes = [ 60, 61, 63, 64, 65, 66];
+var notes = [ 55, 57, 59, 60, 55, 57, 55, 57, 60, 64, 62, 60];
 
 // For automatically playing the song
 var index = 0;
@@ -14,21 +15,21 @@ var song = [
   { note: 1, duration: 200, display: "A" },
   { note: 2, duration: 200, display: "B" },
   { note: 3, duration: 200, display: "C" },
-  { note: 0, duration: 200, display: "G" },
-  { note: 1, duration: 200, display: "A" },
-  { note: 0, duration: 200, display: "G" },
-  { note: 1, duration: 200, display: "A" },
-  { note: 3, duration: 200, display: "C" },
-  { note: 5, duration: 200, display: "E" },
-  { note: 4, duration: 200, display: "D" },
-  { note: 3, duration: 200, display: "C" }
+  { note: 4, duration: 200, display: "G" },
+  { note: 5, duration: 200, display: "A" },
+  { note: 6, duration: 200, display: "G" },
+  { note: 7, duration: 200, display: "A" },
+  { note: 8, duration: 200, display: "C" },
+  { note: 9, duration: 200, display: "E" },
+  { note: 10, duration: 200, display: "D" },
+  { note: 11, duration: 200, display: "C" }
 ];
 var trigger = 0;
 var autoplay = false;
 var osc;
 
 function setup() {
-  createCanvas(720, 400);
+  createCanvas(windowWidth, windowHeight);
   var div = createDiv("Click to play notes or ")
   div.id("instructions");
   var button = createA("#","play song automatically.");
@@ -80,6 +81,7 @@ function draw() {
   }
   
   */
+  
 
 
   // Draw a keyboard
